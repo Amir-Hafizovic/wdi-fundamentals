@@ -30,7 +30,6 @@ function checkForMatch() {
 }
 function flipCard() {
     var cardId = this.getAttribute('data-id');
-    console.log("User flipped " + cards[cardId].rank + " of " + cards[cardId].suit + " @ " + cards[cardId].cardImage);
     cardsInPlay.push(cards[cardId].rank);
     this.setAttribute('src', cards[cardId].cardImage);
   if (cardsInPlay.length === 2) {
